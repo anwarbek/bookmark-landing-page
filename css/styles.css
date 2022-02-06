@@ -1,19 +1,19 @@
 @font-face {
-    font-family: "Rubik";
-    src: url("../fonts/Rubik-Regular.woff2") format("woff2"),
-        url("../fonts/Rubik-Regular.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Regular.woff2") format("woff2"),
+  url("../fonts/Rubik-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "Rubik";
-    src: url("../fonts/Rubik-Medium.woff2") format("woff2"),
-        url("../fonts/Rubik-Medium.woff") format("woff");
-    font-weight: 500;
-    font-style: normal;
-    font-display: swap;
+  font-family: "Rubik";
+  src: url("../fonts/Rubik-Medium.woff2") format("woff2"),
+  url("../fonts/Rubik-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
 }
 
 :root {
@@ -58,10 +58,10 @@ img {
 }
 
 /* OUTLINE-STYLES */
-  *:focus {
-    outline: 2px dotted var(--dark-blue);
-    outline-offset: 3px;
-  }
+*:focus {
+  outline: 2px dotted var(--dark-blue);
+  outline-offset: 3px;
+}
 
 /* BUTTON */
 .button {
@@ -121,4 +121,69 @@ img {
 /* MAIN_CONTENT */
 .main-content {
   flex-grow: 1;
+}
+
+/* HEADER */
+.header {
+  margin: 0;
+  padding: 48px 0;
+}
+
+.header-body {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.header-logo {
+  display: flex;
+  margin-right: auto;
+}
+
+.logo-img {
+  margin: 0;
+  padding: 0;
+  width: 150px;
+  height: 25px;
+}
+
+.header-menu {
+  margin: 0 48px;
+}
+
+.header-menu-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.header-menu-item-list:not(:last-child) {
+  margin-right: 46px;
+}
+
+.header-menu-item-list {
+  display: flex;
+}
+
+.header-menu-link {
+  margin: 0;
+  padding: 8px 0;
+  font-size: 13px;
+  line-height: 17px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 1.5px;
+  color: var(--dark-blue);
+  transition: all 0.3s ease 0s;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.header-menu-link:hover {
+  color: var(--tomato);
+}
+
+.button {
+  text-decoration: none;
 }
